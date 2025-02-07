@@ -3,32 +3,34 @@ import random
 user_wins = 0
 computer_wins = 0
 
-options = ['rock', 'paper', 'scissors']
+options = ['fire', 'water', 'earth', 'air', 'lightning', 'ice']
+
+winning_combinations = {
+    'fire': ['earth', 'ice'],
+    'water': ['fire', 'lightning'],
+    'earth': ['water', 'lightning'],
+    'air': ['fire', 'earth'],
+    'lightning': ['air', 'ice'],
+    'ice': ['water', 'air']
+}
 
 while True:
-    user_input = input("Choose rock, paper or scissors or Q to quit: ").lower()
+    user_input = input("Choose fire, water, earth, air, lightning, or ice (or Q to quit): ").lower()
     if user_input == 'q':
         break
     
     if user_input not in options:
-        print("Invalid choice. Please choose rock, paper, or scissors.")
+        print("Invalid choice. Please choose a valid option.")
         continue
 
-    random_number = random.randint(0, 2)
-    computer_pick = options[random_number]
+    computer_pick = random.choice(options)
     print(f"Computer picked {computer_pick}.")
 
-    if user_input == 'rock' and computer_pick == 'scissors':
-        print("You won!")
-        user_wins += 1
-    elif user_input == 'paper' and computer_pick == 'rock':
-        print("You won!")
-        user_wins += 1
-    elif user_input == 'scissors' and computer_pick == 'paper':
-        print("You won!")
-        user_wins += 1
-    elif user_input == computer_pick:
+    if user_input == computer_pick:
         print("It's a tie!")
+    elif computer_pick in winning_combinations[user_input]:
+        print("You won!")
+        user_wins += 1
     else:
         print("You lost!")
         computer_wins += 1
