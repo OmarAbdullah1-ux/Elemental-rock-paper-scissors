@@ -1,16 +1,16 @@
 
-# ✊✋✌️ Rock Paper Scissors Game
+# 🌍🔥💨 Elemental Battle Game ❄️⚡🌊
 
-A simple **Rock Paper Scissors** game where you play against the computer. Can you outsmart the AI and claim victory? 🏆
+A thrilling **element-based** battle game where you challenge the computer using the powers of **Fire, Water, Earth, Air, Lightning, and Ice**! Can you harness the elements and emerge victorious? ⚔️
 
 ---
 
 ## 🚀 Features
 
-- 🆚 Play against a computer opponent.  
-- 🔢 Keeps track of your wins and losses.  
-- 🔄 Unlimited rounds until you choose to quit.  
-- 🏁 Final score displayed at the end.  
+- 🌋 **Fire, Water, Earth, Air, Lightning, and Ice** as playable elements.  
+- 🎮 **Engaging battle system** based on elemental strengths and weaknesses.  
+- 🏆 **Score tracking** for wins and losses.  
+- 🔄 **Play as many rounds as you like** until you choose to quit.  
 
 ---
 
@@ -18,32 +18,37 @@ A simple **Rock Paper Scissors** game where you play against the computer. Can y
 
 1. **Clone the repository:**  
    ```bash
-   git clone https://github.com/yourusername/rock-paper-scissors.git
-   cd rock-paper-scissors
+   git clone https://github.com/yourusername/elemental-battle-game.git
+   cd elemental-battle-game
    ```
 
 2. **Run the game:**  
    ```bash
-   python rock_paper_scissors.py
+   python elemental_battle.py
    ```
 
 ---
 
 ## 🎮 How to Play
 
-1. **Start the game** and choose:
-   - `"rock"` 🪨
-   - `"paper"` 📄
-   - `"scissors"` ✂️  
+1. **Choose an element** from:
+   - 🌋 `"fire"`
+   - 🌊 `"water"`
+   - 🌍 `"earth"`
+   - 💨 `"air"`
+   - ⚡ `"lightning"`
+   - ❄️ `"ice"`
    - `"q"` to quit the game.
 
-2. **The computer picks randomly** between rock, paper, and scissors.
+2. **The computer picks randomly** from the same elements.
 
 3. **Winning Rules:**  
-   - Rock 🪨 beats Scissors ✂️  
-   - Scissors ✂️ beats Paper 📄  
-   - Paper 📄 beats Rock 🪨  
-   - If both players pick the same, it's a **tie**!
+   - 🔥 Fire beats 🌍 Earth & ❄️ Ice  
+   - 🌊 Water beats 🔥 Fire & ⚡ Lightning  
+   - 🌍 Earth beats 🌊 Water & ⚡ Lightning  
+   - 💨 Air beats 🔥 Fire & 🌍 Earth  
+   - ⚡ Lightning beats 💨 Air & ❄️ Ice  
+   - ❄️ Ice beats 🌊 Water & 💨 Air  
 
 4. **Score is displayed** after each round, and the final score is shown when you quit.
 
@@ -61,5 +66,5 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-_“Good luck, and may the best hand win!”_ ✊✋✌️
+_“Master the elements and claim victory!”_ ⚡🔥🌊🌍❄️💨
 ```
